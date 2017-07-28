@@ -1,0 +1,82 @@
+* {
+    font-family: Tahoma;
+}
+a{
+    color: #0074A2
+}
+a:hover {
+    color:#003300; /*при наведенні посилання змінює колір*/
+}
+.bar{
+    background: red; /* Колір границі*/
+    margin: 1px; /* Зовнішній отступ */
+}
+
+.bar b {
+    color:#FF3399;
+}
+
+span.bold {
+    font-weight: bold;
+}
+span.italic{
+    font-style: italic;
+}
+span.underlined{
+    text-decoration: underline;
+}
+.container{
+    background: white;
+    border: solid;
+    width: 1000px;
+    padding: 1px;
+
+    margin: auto; /*вирівнює блок по центру екрану*/
+                  /*(тільки якщо задана ширина)*/
+}
+header, footer, .navigation{
+    margin: 20px;
+    padding: 10px;
+}
+.content{
+    padding:20px;
+}
+header{
+    background: #BCBE97;
+    height: 50px;
+    text-align: right;
+    font-style: italic;
+}
+footer{
+    background: #F2F2F2;
+    height: 40px;
+    text-align: center;
+}
+.contact-form{
+    width: 700px;
+    margin: auto;
+    padding: 10px;
+    border: 2px solid #444;
+}
+.navigation{
+    border-top: solid #EDEDED;
+    border-bottom: solid #EDEDED;
+    padding: 10px;
+}
+body{
+    background: #E5E5E5;
+}
+.flower{
+    float: right;
+}
+img{
+    height: 50px;
+    margin-left: 50px;
+}
+h2{
+    color: #403E3F;
+}
+#ask{
+	font-size: 15px;
+	color: #757779;
+}

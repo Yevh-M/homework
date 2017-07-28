@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8"/>
+        <title>Forms</title>
+    </head>
+    <body>
+        <form action="" method="post" enctype='multipart/form-data'>
+            <table border="0" cellspacing="" cellpadding="10">
+                <tr>
+                    <td>First name:</td>
+                    <td><input type='text' name='first_name'/><br /></td>
+                </tr>
+                <tr>
+                    <td>Enter email:</td>
+                    <td><input type='email' name='email'/><br /></td>
+                </tr>
+                <tr>
+                    <td>Enter phone:</td>
+                    <td><input type='text' name='phone'/><br /></td>
+                </tr>
+                <tr>
+                    <td colspan="2">Message:<input type='text' name='message'/></td>
+                </tr>
+                <tr>
+                    <td>Gender:</td>
+                    <td>
+                        <input type="radio" name="gender" value="male"/> Male <br />
+                        <input type="radio" name="gender" value="female"/> Female <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td>Application for</td>
+                    <td>
+                        <input type='checkbox' name='full_time_job' value="1" checked/> Full time job <br />
+                        <input type='checkbox' name='underemployment' value="2"/> Underemployment <br />
+                        <input type='checkbox' name='work_on_weekends' value="3"/> Work on weekends <br />
+                        <input type='checkbox' name='irregular_working_day' value="4"/> Irregular working day <br />
+                        <input type='checkbox' name='night_work' value="5"/> Night work <br />
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2"> <select name='country'>
+                        <option selected value=0>Choose a country of your dreams</option>
+                        <option value='ua'>Ukraine</option>
+                        <option value='uk'>England</option>
+                        <option value='us'>USA</option>
+                        <option value='fr' disabled>France</option>
+                    </select></td>
+                </tr>
+                <input type='hidden' name='date' value='21.07.2017'/>
+                <tr>
+                    <td>Select files</td>
+                    <td><input type='file'name='doc' multiple />
+                </tr>
+                <tr>
+                    <td colspan="2"><input type='submit' value='Send'/></td>
+                </tr>
+            </table>
+        </form>
+    </body>
+</html>
