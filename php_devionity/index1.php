@@ -9,5 +9,14 @@ print_r($countries);
 echo '</pre>';
 ?>
 
+<?php
+// Асоціативний масив
+
+$countries = array('China' => Beijing, 'India' => New_Delhi, 'USA' => Washington, 'Indonesia' => Jakarta, 'Brazil' =>Brasília);
+
+echo '<pre>';
+print_r($countries);
+echo '</pre>';
+
 
 
