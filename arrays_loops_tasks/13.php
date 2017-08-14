@@ -1,0 +1,15 @@
+<?php
+
+
+for($elm_1 = 1; $elm_1 <= 10; $elm_1++){
+    
+	echo "<div style='float: left; margin-left: 30px; width: 60px;'>";
+    
+	for($elm_2 = 1; $elm_2 <= 10; $elm_2++){
+
+        $result = $elm_1 * $elm_2;
+        
+		echo  $elm_1 . '*' . $elm_2 . '=' . $result . '<br/>';
+    }
+    echo '<br/></div>';
+}
