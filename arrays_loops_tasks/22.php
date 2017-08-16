@@ -1,5 +1,5 @@
 <?php
-//22
+
 //Output pyramid from the values of two elements
 
 $n = 1;
