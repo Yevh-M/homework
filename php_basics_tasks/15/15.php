@@ -1,30 +1,39 @@
 <?php
-//It's not over yet. Checking the division by zero works incorrectly
-$a = 2;
-$b = 2;
-$operator = '+';
-$c;
+$a = 7;
+$b = 0;
+$operator = '/';
 
-if ($b == 0){
-    echo 'You cannot divide by zero!';
-}
 switch ($operator){
-    case '+';
-        echo $c = ($a + $b);
+    case '+':
+        $c = ($a + $b);
         break;
-    case '-';
-        echo $c = $a - $b;
+    case '-':
+        $c = ($a - $b);
         break;
-    case '*';
-        echo $c = $a * $b;
+    case '*':
+        $c = ($a * $b);
         break;
-    case '/';
-        echo $c = $a / $b;
+    case '/':
+        if ($b != 0)
+        {
+             $c = ($a / $b);
+        } else{
+            echo 'You cannot divide by zero!';
+        }
         break;
-    case '%';
-        echo $c = $a % $b;
+    case '%':
+        if ($b != 0) {
+            $c = ($a % $b);
+        }else{
+            echo 'You cannot split modulo by zero!';
+        }
         break;
+}
+if(!is_int($c)&& !is_float($c)) {
+    $c = "Invalid result";
 }
 echo '<pre>';
 echo  $a . $operator . $b . '=' . $c ;
 echo '</pre>';
+
+
