@@ -1,16 +1,13 @@
 <?php
+//16
 
-$arr = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+$arr = [1=>1, 2, 3, 4, 5, 6, 7, 8, 9];
 
-foreach($arr as $n)
+foreach($arr as $key => $n)
 {
-    static $count = 1;
-    echo $n;
-    if($count != 3){
-        echo ", ";
-        $count++;
+    if($key % 3 == 0){
+        echo $key . "\n";
     }else {
-        echo " ";
-        $count = 1;
+        echo $key . ", ";
     }
 }
